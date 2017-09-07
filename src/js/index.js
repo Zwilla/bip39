@@ -1135,7 +1135,7 @@
     function createQr(e) {
         var content = e.target.textContent || e.target.value;
         if (content) {
-            var size = 130;
+            var size = 256;
             DOM.qrImage.qrcode({width: size, height: size, text: content});
             if (!showQr) {
                 DOM.qrHider.addClass("hidden");
